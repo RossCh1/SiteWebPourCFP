@@ -1,0 +1,85 @@
+<html>
+
+<head>
+	<title>Inscriptions</title>
+	<meta charset="utf-8">
+    <link rel="shortcut icon" href="CFPlogo.jpg">
+    <link rel="stylesheet" href="CSSsite.css">
+</head>
+
+<body link="#000000" vlink="000000" alink="000000">     
+    <div id="headersoutinfo"> 
+            <a id="linkmenusoutinfoimg" href="CFPdesCarrefoursPageMain.html"><img src="CFPmainpagelink.png" height="50" width="164"></a>
+            <a href="CFPdesCarrefoursPageCarrefours.html">Carrefours</a>
+            <div class="dropdown">
+                <button class="progbtn">
+                    Programmes<i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="CFPdesCarrefoursPageComp.html">Comptabilité</a>
+                    <a href="CFPdesCarrefoursPageSecr.html">Secrétariat</a>
+                    <a href="CFPdesCarrefoursPageSecrScol.html">Secrétariat en milieu scolaire</a>
+                    <a href="CFPdesCarrefoursPageSecrMed.html">Secrétariat médical</a>
+                    <a href="CFPdesCarrefoursPageSoutInfo.html">Soutien informatique</a>
+                    <a href="CFPdesCarrefoursPageVoy.html">Conseil et vente de voyages</a>
+                    <a href="CFPdesCarrefoursPageHotel.html">Réception en hôtellerie</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="progbtn">
+                    À propos du CFP<i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="CFP_des_Carrefours_Plan-de-lutte_CE-10-juin-2021.pdf" target="_blank">Plan de lutte contre l’intimidation et la violence</a>
+                    <a href="CFPdesCarrefoursPageDenon.html">Signalement – Intimidation et violence</a>
+                    <a href="https://www.cssmb.gouv.qc.ca/aide-au-placement/" target="_blank">Aide au placement</a>
+                </div>
+            </div>
+            <a href="CFPdesCarrefoursPageContact.html">Nous contacter</a>
+    </div>
+    <br>
+    <h1>Inscriptions</h1>
+    <form method="post" action="mailto:Info.cfpdc@csmb.qc.ca">
+        <label>Prénom : </label> <input type="text" name="prenom"/>
+        <label>Nom : </label> <input type="text" name="nom"/><br>
+        <label>Courriel : </label> <input type="text" name="courriel"><br>
+        <label>Téléphone : </label> <input type="text" name="tel"><br>
+        <label>Adresse : </label> <input type="text" name="adresse"/><br>
+        <label>Ville : </label> <input type="text" name="ville"/>
+        <label>État/Province : </label> <input type="text" name="province"/><br>
+        <label>Code Postal : </label> <input type="text" name="postal"/>
+        <label>Pays : </label> <input type="text" name="pays"/><br>
+        <br>
+        <br>
+        <h2>Choix de programme</h2>
+        <h3>Carrefour de l'administration, du commerce et de l'informatique</h3>
+        <input type="radio" name="prog" value="Comptabilité"><label>Comptabilité</label><br>
+	    <input type="radio" name="prog" value="Secrétariat"><label>Secrétariat</label><br>
+	    <input type="radio" name="prog" value="Secrétariat en milieu scolaire"><label>Secrétariat en milieu scolaire</label><br>
+	    <input type="radio" name="prog" value="Secrétariat médical"><label>Secrétariat médical</label><br>
+        <input type="radio" name="prog" value="Soutien informatique"><label>Soutien informatique</label><br>
+        <br>
+        <h3>Carrefour de l'industrie du voyage et de l'hotêllerie</h3>
+        <input type="radio" name="prog" value="Conseil Voyage"><label>Conseil et vente de voyages</label><br>
+	    <input type="radio" name="prog" value="Hotel"><label>Réception en hotêllerie</label><br>
+        <br>
+        <h3>Carrefour des arts de la scène et de l'entrepreneuriat</h3>
+        <input type="radio" name="prog" value="Entreprise Culturel"><label>Lancement d'une entreprise - Volet culturel</label><br>
+	    <input type="radio" name="prog" value="Représentation Culturel"><label>Représentation - Volet culturel</label><br>
+        <br>
+        <h3>Entrepreneuriat Marguerite Bourgeoys</h3>
+        <input type="radio" name="prog" value="Lancement Entreprise"><label>Lancement d'une entreprise</label><br>
+	    <input type="radio" name="prog" value="Vente"><label>Vente - conseil</label><br>
+        <br>
+        <h3>Autres</h3>
+        <input type="text" name="autre"/><br>
+        <h3>List</h3>
+        <textarea name="progautre"></textarea><br>
+        <br>
+        <br>
+        <input type="submit" value="envoyer">
+    </form>
+</body>
+
+
+</html>

@@ -1,0 +1,489 @@
+    /*all pages*/
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+        text-decoration: none;
+    }
+    /*header navigation menu*/
+    #headersoutinfo {
+    overflow: hidden;
+    background-color: rgb(255, 166, 0);
+    }
+
+    #headersoutinfo a{
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    margin:30px;
+    }
+    .dropdown {
+    float: left;
+    overflow: hidden;
+    }
+
+    .dropdown .progbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 30px;
+    }
+
+    .dropdown-content {
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    float: left;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    /*main page*/
+    #firstpart_main{
+        padding:50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(lol.jpg);
+        height: 500px;
+    }
+    #firstpart-text_main{
+        display:center;
+        width:1000px;
+    }
+    #firstpart-text_main p, #firstpart-text_main h1{
+        text-align: right;
+        color: white;
+    }
+    #firstpart-photo_main{
+        width:600px;
+    }
+    #firstpart_main div{
+        display:inline-block;
+    }
+    #secpart_main{
+        width: 100%;
+        height:300px;
+        background-repeat: no-repeat;
+        background-image: url(inscriptionbackground.jpg);
+        background-size:100%;
+        display: grid;
+        overflow:auto; 
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 20px; 
+    }
+    #secpart-text_main{
+        width: 600px;
+        text-align: center;
+        padding-top: 50px;
+        padding-left: 200px;
+        font-size: 40;
+    }
+    #secpart-text_main h1{
+        color:#f9f9f9;
+    }
+    #secpart-link_main{
+        width:50%;
+        padding-top: 100px;
+        padding-left:300px ;
+    }
+    /*carrefours page*/
+    #firstpart_carr{
+        width: 100%;
+        height: 300px;
+        background-color: navy;
+        text-align: center;
+    }
+    #firstpart_carr h1{
+        padding-top: 50px;
+        color: #6237ff;
+        font-size: 50;
+    }
+    #secpart_carr{
+        padding:50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color:darkgreen;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+
+    }
+    #secpart-text_carr{
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    #secpart-text_carr h2{
+        font-size: 40;
+        color: rgb(115, 182, 0);
+    }
+    #secpart-photo_carr{
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+    #secpart-photo_carr p{
+        color: rgb(115, 182, 0);
+    }
+    #secpart-list_carr{
+        background-color: rgb(115, 182, 0);
+        grid-row: 1/3;
+        grid-column: 3;
+    }
+    #secpart-list_carr ul li a{
+        color: darkgreen;
+    }
+    #thirdpart_carr{
+        background-color:darkblue;
+        padding:50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+
+    }
+    #thirdpart-text_carr{
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    #thirdpart-text_carr h2{
+        font-size: 40;
+        color: #4437ff;
+    }
+    #thirdpart-photo_carr{
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+    #thirdpart-photo_carr p{
+        color: #4437ff;
+    }
+    #thirdpart-list_carr{
+        background-color: #4437ff;
+        grid-row: 1/3;
+        grid-column: 3;
+    }
+    #thirdpart-list_carr ul li a{
+        color: darkblue;
+    }
+    /*comptabilité page*/
+    #firstpart_comp{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(0, 128, 6);
+        text-align: center;
+    }
+    #firstpart_comp h1{
+        padding-top: 50px;
+        color: #22d822;
+        font-size: 50;
+    }
+    #secpart_comp{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        height:700px;
+        width:100%;
+    }
+    #secpart-photo_comp{
+        grid-column: 1/2;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_comp{
+        grid-column: 2/4;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_comp .p3{
+        font-weight:bold;
+    }
+    /*secrétariat page*/
+    #firstpart_secr{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(1, 167, 167);
+        text-align: center;
+    }
+    #firstpart_secr h1{
+        padding-top: 50px;
+        color: #23e0e0;
+        font-size: 50;
+    }
+    #secpart_secr{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        height:700px;
+        width:100%;
+    }
+    #secpart-photo_secr{
+        grid-column: 1/2;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_secr{
+        grid-column: 2/4;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_secr .p3{
+        font-weight:bold;
+    }
+    /*secrétariat en milieu scolaire page*/
+    #firstpart_secrscol{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(0, 100, 182);
+        text-align: center;
+    }
+    #firstpart_secrscol h1{
+        padding-top: 50px;
+        color: #3898e7;
+        font-size: 50;
+    }
+    #secpart_secrscol{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        height:700px;
+        width:100%;
+    }
+    #secpart-photo_secrscol{
+        grid-column: 1/2;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_secrscol{
+        grid-column: 2/4;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_secrscol .p3{
+        font-weight:bold;
+    }
+    /*secrétariat médical*/
+    #firstpart_secrmed{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(73, 1, 167);
+        text-align: center;
+    }
+    #firstpart_secrmed h1{
+        padding-top: 50px;
+        color: #8d4be2;
+        font-size: 50;
+    }
+    #secpart_secrmed{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        height:700px;
+        width:100%;
+    }
+    #secpart-photo_secrmed{
+        grid-column: 1/2;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_secrmed{
+        grid-column: 2/4;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_secrmed .p3{
+        font-weight:bold;
+    }
+    /*soutien informatique page*/
+    #firstpart_soutinfo{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(136, 0, 118);
+        text-align: center;
+    }
+    #firstpart_soutinfo h1{
+        padding-top: 50px;
+        color: #dd2abf;
+        font-size: 50;
+    }
+    #secpart_soutinfo{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        height:700px;
+        width:100%;
+    }
+    #secpart-photo_soutinfo{
+        grid-column: 1/2;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_soutinfo{
+        grid-column: 2/4;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_soutinfo .p3{
+        font-weight:bold;
+    }
+    /*Conseil et vente de voyages page*/
+    #firstpart_voy{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(39, 121, 168);
+        text-align: center;
+    }
+    #firstpart_voy h1{
+        padding-top: 50px;
+        color: #6ea8ce;
+        font-size: 50;
+    }
+    #secpart_voy{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        height:700px;
+        width:100%;
+    }
+    #secpart-photo_voy{
+        grid-column: 1/2;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_voy{
+        grid-column: 2/4;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_voy .p3{
+        font-weight:bold;
+    }
+    /*Réception en hôtellerie page*/
+    #firstpart_hotel{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(145, 170, 0);
+        text-align: center;
+    }
+    #firstpart_hotel h1{
+        padding-top: 50px;
+        color: #a5df39;
+        font-size: 50;
+    }
+    #secpart_hotel{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        height:700px;
+        width:100%;
+    }
+    #secpart-photo_hotel{
+        grid-column: 1/2;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_hotel{
+        grid-column: 2/4;
+        grid-row: inherit;
+        height:500px;
+    }
+    #secpart-text_hotel .p3{
+        font-weight:bold;
+    }
+    /*Dénonciation page*/
+    #firstpart_denon{
+        padding:50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(intimidation.jpg);
+        height: 500px;
+    }
+    #firstpart-text_denon{
+        height:inherit;
+        width:25%;
+        padding: 200px;
+    }
+    #firstpart-text_denon h1{
+        text-align: left;
+        color: white;
+        font-size: 50;
+    }
+    #lien-plan_denon{
+        color: #8d4be2;
+        text-decoration:underline;
+    }
+    #thirdpart_denon{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        height:100px;
+        width:100%;
+    }
+    #thirdpart-list1_denon{
+        grid-row: 1/4;
+        grid-column: 1/3;
+    }
+    #thirdpart-list2_denon{
+        grid-row: 1/4;
+        grid-column: 2/4;
+    }
+    /*Contact page*/
+    #firstpart_contact{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(165, 0, 0);
+        text-align: center;
+    }
+    #firstpart_contact h1{
+        padding-top: 50px;
+        color: #ff3737;
+        font-size: 50;
+    }
+    #secpart_contact{
+        padding:50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+
+    }
+    #secpart-text_contact{
+        grid-column: 1;
+        grid-row: 1/5;
+    }
+    #secpart-text_contact h3{
+        font-size: 40;
+    }
+    #secpart-inscription_contact{
+        grid-column: 2/4;
+        grid-row: 1;
+        padding-top: 50px;
+    }
+    #secpart-elevedunjour_contact{
+        grid-row: 2;
+        grid-column: 2/4;
+    }
+    #email_contact:hover{
+        color:#ff3737
+    }
